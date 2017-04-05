@@ -1,0 +1,30 @@
+spring:
+    application.name: apidocs
+    jackson.serialization.indent_output: true
+    messages:
+            basename: i18n/messages
+    mvc:
+            favicon:
+                enabled: false
+
+server:
+    context-path: /apidocs
+    port: 9080
+
+management:
+    contextPath: /management
+    add-application-context-header: false
+
+believe:
+    swagger:
+       title: MiniShop API
+       description: MiniShop API documentation
+       version: 1.0.0
+       termsOfServiceUrl:
+       contactName: lxp
+       contactUrl:
+       contactEmail: lixingping233@163.com
+       license:
+       licenseUrl:
+    scheduler:
+            orderUnpaidFailTime: 30000
